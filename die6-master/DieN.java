@@ -12,7 +12,6 @@ public class DieN
   }
   public int rollAndGetValue(int sides) {
       this.roll(sides);
-      this.value = (int)(Math.random() * sides) + 1;
       return value;
   }
 }
