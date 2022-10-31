@@ -1,20 +1,18 @@
-import java.util.Scanner;
 public class DieN
 {
-  /**
-   * Contains the current value of the die
-   */
   private int value;
-  private int n;
-  public DieN() {
-    this.roll();
+  public DieN(int sides) {
+    this.roll(sides);
   }
   public int getValue() {
     return value;
   }
-  public void roll() {
-      Scanner scanner = new Scanner(System.in);
-      int n = scanner.nextInt();
-      this.value = (int)(Math.random() * n) + 1;
+  public void roll(int sides) {
+      this.value = (int)(Math.random() * sides) + 1;
+  }
+  public int rollAndGetValue(int sides) {
+      this.roll(sides);
+      this.value = (int)(Math.random() * sides) + 1;
+      return value;
   }
 }

@@ -1,9 +1,11 @@
 #BlueJ class context
 comment0.target=DieN
-comment1.params=
-comment1.target=DieN()
+comment1.params=sides
+comment1.target=DieN(int)
 comment2.params=
 comment2.target=int\ getValue()
-comment3.params=
-comment3.target=void\ roll()
-numComments=4
+comment3.params=sides
+comment3.target=void\ roll(int)
+comment4.params=sides
+comment4.target=int\ rollAndGetValue(int)
+numComments=5
