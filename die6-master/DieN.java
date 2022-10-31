@@ -12,6 +12,6 @@ public class DieN
   }
   public int rollAndGetValue(int sides) {
       this.roll(sides);
-      return value;
+      return getValue();
   }
 }
