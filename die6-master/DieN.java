@@ -1,17 +1,19 @@
 public class DieN
 {
   private int value;
+  private int sides;
   public DieN(int sides) {
-    this.roll(sides);
+      this.sides = sides;
+      this.roll();
   }
   public int getValue() {
     return value;
   }
-  public void roll(int sides) {
-      this.value = (int)(Math.random() * sides) + 1;
+  public void roll() {
+      this.value = (int)(Math.random() * this.sides) + 1;
   }
-  public int rollAndGetValue(int sides) {
-      this.roll(sides);
+  public int rollAndGetValue() {
+      this.roll();
       return getValue();
   }
 }
